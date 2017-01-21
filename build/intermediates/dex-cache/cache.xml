@@ -111,6 +111,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Omistaja\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\gson-2.3.1_d61ca39ec06a8b869e3daae8cf82f0bdddff306b.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"

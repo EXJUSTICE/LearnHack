@@ -79,7 +79,7 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
     Marker mCurrLocationMarker;
     TextView coinView;
     int uniqueId;
-    RoomDB rDB;
+
     HashMap<Integer,Room> roomDB;
 
 
@@ -93,9 +93,7 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
         setContentView(R.layout.activity_main);
         buildGoogleApiClient();
 
-        //Gaining access to Singleton DB with dummy data
-        rDB=RoomDB.get(this);
-        roomDB= rDB.getRooms();
+
 
         checkLocationPermission();
         if (status) {
@@ -383,9 +381,6 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
                     String intentAction = "PROXIMITY_ALERT" + uniqueId;
                     Intent intent = new Intent(intentAction);
                     //Start placing things within the intent
-                    proximityIntent = PendingIntent.getBroadcast(getApplicationContext(), uniqueId, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-                    intent.putExtra(DefuseReceiver.location_no, locationCount);
-                    mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 
 
                         drawMarker(point);
@@ -395,12 +390,6 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
 
 
 
-                    SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putString("lat" + Integer.toString((locationCount - 1)), Double.toString(userlat));
-                    editor.putString("lng" + Integer.toString((locationCount - 1)), Double.toString(userlon));
-                    editor.putInt("locationCount", locationCount);
-
-                    editor.commit();
 
 
                 }
@@ -570,8 +559,7 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
         }
 
 
-        IntentFilter filter = new IntentFilter(PROX_ALERT_INTENT);
-        registerReceiver(new DefuseReceiver(), filter);
+
     }
     @Override
     public void onPause(){
@@ -580,7 +568,7 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
             LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
         }
         try{
-            unregisterReceiver(new DefuseReceiver());
+
         }catch (final Exception exception){
             //was already unregistered, so do nothing
         }

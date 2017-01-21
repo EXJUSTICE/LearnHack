@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="ROOM NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/roomNameTextView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/learnhack"
+        android:layout_marginTop="41dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/roomNameTextView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Incorrect details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/buttonupdate"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Lorem Ipsum Dolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/map"
+        android:layout_alignEnd="@+id/buttonbook"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:text="Book Room!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonbook"
+        android:layout_above="@+id/buttonupdate"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="View on map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        android:layout_above="@+id/buttonbook"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
