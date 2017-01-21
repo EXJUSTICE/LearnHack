@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_77dc1cb8c04927ed8e5d85cb2726d16802dfe627.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_78e69f5703cbcbae12f9dbb9faaae4671e13ed34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-9.8.0_620d86d23105479525f3832dc11bad65741a6adc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_c0390d81e789f0a0a6a6945468814f6eaee646eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_54ac07992d8ed37fdad9473f83aacb4e79261bf5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.8.0_fb26fce15cb863338792a4e24bf6bb2a5316228a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_d20bd430b02086189891b56de38fb2b73ceae95f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.8.0_c8a7b9cfee619b3571bead125b096044e1331360.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_64fe8fbcf56d57ed953c95995fc29d522c170dc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_7c537990a927e61d5a8799445674330764cad6ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.8.0_b47bf45c3a2890c59d8b4952cc4f0b9a4cf35b77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-9.8.0_f5649482195d2b848e8e77133d8a3abb772ab416.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\Omistaja\AndroidStudioProjects\BombVenture\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_2f4f18f03d11bc0b8e5d19e4c5a6daa8d4d3b347.jar" />
+    </item>
+
+</items>
