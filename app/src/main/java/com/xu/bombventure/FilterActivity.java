@@ -127,7 +127,7 @@ public class FilterActivity extends AppCompatActivity {
                 //iInitialize JSONGet class to parse out a JSON string, saved higher up as JSON
                 JSONGet js = new JSONGet();
 
-                js.execute("https://learnhack-roombookings.herokuapp.com/list_rooms");
+                js.execute("https://learnhack-roombookings.herokuapp.com/room_info");
 
             }
         });

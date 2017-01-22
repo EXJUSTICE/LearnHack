@@ -46,6 +46,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 
 //Basically two programs here, one for maps, one for finding location
@@ -79,8 +83,10 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
     Marker mCurrLocationMarker;
     TextView coinView;
     int uniqueId;
+    String json;
 
-    HashMap<Integer,Room> roomDB;
+    //Ideally a hashmap,, but for the length of this version we will use a simple ArrayList
+    ArrayList<LatLng> coordinates;
 
 
 
@@ -92,6 +98,10 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
         boolean status = isGooglePlayServicesAvailable(this);
         setContentView(R.layout.activity_main);
         buildGoogleApiClient();
+        Intent intent = getIntent();
+        json =intent.getStringExtra("json");
+
+
 
 
 
@@ -165,6 +175,36 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
             }
 
         }
+
+    public ArrayList<LatLng> parseJSONintoCoords(String json){
+        ArrayList<LatLng> coordmap = new ArrayList<LatLng>();
+        try{
+            JSONArray response= new JSONArray(json);
+
+            for(int i =0;i<response.length();i++){
+                JSONObject object = response.getJSONObject(i);
+
+              /*  String lat = object.get();
+                String lng= object.get();
+
+
+                LatLng coord = new LatLng(Double.parseDouble(lat),Double.parseDouble(lng));
+                coordmap.add(coord);
+                 */
+                /*Toast toast =Toast.makeText(this,name,Toast.LENGTH_SHORT);
+                toast.show();
+                */
+
+            }
+
+        }catch (org.json.JSONException e){
+            e.printStackTrace();
+        }
+
+        return coordmap;
+
+
+    }
 
 
     //Required code for LocationListener, onConnected to Google Play Services, we will find
@@ -310,30 +350,29 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
         }
 
 
-
-        if (locationCount != 0) {
+/*2201 No way of loading the coordinates as of current
+        //loading Coordinates into map
+        if (coordinates.size() != 0) {
             String latitude = "";
             String longitude = "";
 
             //Iterating through locations stored
             //Draw marker and circles for each location stored
-            for (int i = 0; i < locationCount; i++) {
+            for (int i = 0; i < coordinates.size(); i++) {
                 //getting latitutude of i-th location
-                latitude = sharedPreferences.getString("lat" + i, "0");
-                //getting longitude of the i-th location
-                longitude = sharedPreferences.getString("lng" + i, "0");
-
+                LatLng nearbyLoc= coordinates.get(i);
                 //DRAW MARKER ON MAP, if latitude has nonzero value
                 if (latitude.equals("0")) {
                     //
-                    drawMarker(new LatLng(Double.parseDouble(latitude), Double.parseDouble(longitude)));
+                    drawMarker(nearbyLoc);
 
                     //DRAW CIRCLE ON MAP
-                    drawCircle(new LatLng(Double.parseDouble(latitude), Double.parseDouble(longitude)));
+                    drawCircle(nearbyLoc);
                 }
 
 
             }
+            */
 
             googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                 @Override
@@ -417,7 +456,8 @@ public class MainActivity extends FragmentActivity implements  OnMapReadyCallbac
 
 
         }
-    }
+
+
 
 
 

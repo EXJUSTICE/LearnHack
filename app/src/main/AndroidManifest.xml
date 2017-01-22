@@ -35,7 +35,9 @@
         <activity android:name=".DetailActivity"
             android:label="Room Details"/>
         <activity android:name=".ListActivity"
-            android:label="List of Suitable Rooms"></activity>
+            android:label="List of Suitable Rooms">
+
+        </activity>
         <activity android:name =".FilterActivity"
             android:label="Enter Room Criteria">
             <intent-filter>
